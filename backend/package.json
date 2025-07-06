@@ -20,7 +20,13 @@
   "pnpm": {
     "patchedDependencies": {
       "http-proxy@1.18.1": "patches/http-proxy@1.18.1.patch"
-    }
+    },
+    "ignoredBuiltDependencies": [
+      "core-js",
+      "es5-ext",
+      "esbuild",
+      "fsevents"
+    ]
   },
   "dependencies": {
     "@maxmind/geoip2-node": "^5.0.0",
