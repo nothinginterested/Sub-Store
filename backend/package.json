@@ -34,6 +34,8 @@
     ]
   },
   "dependencies": {
+    "@babel/register": "^7.17.7",
+    "babel-plugin-relative-path-import": "^2.0.1",
     "@maxmind/geoip2-node": "^5.0.0",
     "automerge": "1.0.1-preview.7",
     "body-parser": "^1.19.0",
