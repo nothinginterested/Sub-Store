@@ -2,20 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "sub-store.min.js",
-      "use": "@vercel/node",
-      "config": {
-        "maxLambdaSize": "50mb",
-        "maxDuration": 30
-      }
+      "src": "api/index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/sub-store.min.js"
+      "dest": "/api"
     }
-  ],
-  "installCommand": "corepack enable && pnpm install",
-  "buildCommand": "pnpm run bundle:esbuild"
+  ]
 }
