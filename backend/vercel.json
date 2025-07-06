@@ -5,7 +5,8 @@
       "src": "src/main.js",
       "use": "@vercel/node",
       "config": {
-        "maxLambdaSize": "50mb"
+        "maxLambdaSize": "50mb",
+        "maxDuration": 30
       }
     }
   ],
@@ -14,10 +15,5 @@
       "src": "/(.*)",
       "dest": "/src/main.js"
     }
-  ],
-  "functions": {
-    "src/main.js": {
-      "maxDuration": 30
-    }
-  }
+  ]
 }
