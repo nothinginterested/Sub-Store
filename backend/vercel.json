@@ -15,5 +15,6 @@
       "src": "/(.*)",
       "dest": "/src/main.js"
     }
-  ]
+  ],
+  "installCommand": "corepack enable && pnpm install"
 }
